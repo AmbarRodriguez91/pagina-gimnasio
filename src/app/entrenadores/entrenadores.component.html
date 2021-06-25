@@ -1,0 +1,26 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h1><b>Nuestros Entrenadores </b></h1>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of equipo">
+          <h3><b> {{item.nombre}}</b></h3>
+          <p>Especialidad: {{item.especialidad}}</p>
+          <p>{{item.Descripcion}}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12">
+      <img src="assets/entrenadores.jpg" class="img-fluid" width="1600" alt="...">
+    </div>
+  </div>
+</div>
+
